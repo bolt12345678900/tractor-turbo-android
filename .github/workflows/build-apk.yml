@@ -13,8 +13,8 @@ jobs:
 
       - name: Unpack and build
         run: |
-          unzip -o tractor_turbo_android_project_fixed.zip
-          cd tractor_turbo_android_project_fixed
+          unzip -o tractor_turbo_android_project.zip
+          cd tractor_turbo_android_project
           npm install
           npx cap add android
           npx cap sync android
@@ -26,7 +26,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tractor-turbo-debug-apk
-          path: tractor_turbo_android_project_fixed/android/app/build/outputs/apk/debug/app-debug.apk
+          path: tractor_turbo_android_project/android/app/build/outputs/apk/debug/app-debug.apk
+
+
+
 
 
 
