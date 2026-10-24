@@ -15,10 +15,8 @@ jobs:
         run: |
           unzip -o tractor_turbo_android_project.zip
           cd tractor_turbo_android_project
-          npm install 
-          npx cap add android 
+          npm install
           npx cap add android
-          npx cap sync android
           npx cap sync android
           cd android
           chmod +x gradlew
