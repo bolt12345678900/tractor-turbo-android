@@ -18,8 +18,6 @@ jobs:
           npm install 
           npx cap add android 
           npx cap add android
-          bash scripts/apply-android-icon.sh
-          rm -f android/app/src/main/res/values/ic_launcher_colors.xml
           npx cap sync android
           npx cap sync android
           cd android
